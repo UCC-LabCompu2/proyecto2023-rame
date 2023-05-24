@@ -9,36 +9,42 @@ body {
 /* Estilos para la etiqueta <header> */
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #ffffff;
     color: #000000;
     padding: 10px;
+    font-family: 'Junge', serif;
+
 }
 
 /* Estilos para la etiqueta <img> */
 
 
-.h1{
-    font-family: "Junge", sans-serif;
-}
-.bosque{
-    width: 1330px;
+.bosque {
+    width: 1348px;
     height: 300px;
     margin: 0;
     padding: 0;
+    margin-right: 0;
+    margin-left: 0;
 
 }
+
 /* Estilos para la etiqueta <nav> */
 nav {
     display: flex;
-    justify-content: space-between;
+    margin-top: 50px;
 
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    margin-left: 340px;
+    margin-right: 0px;
+    font-family: 'Kaisei Opti', serif;
+
+
 }
 
 nav li {
@@ -51,11 +57,17 @@ nav a {
     display: block;
     padding: 15px;
     text-decoration: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    margin-left: 0px;
+
 }
+
 
 nav a:hover {
     background-color: rgba(47, 128, 64, 0.51);
     color: #333;
+
+
 }
 
 /* Estilos para la etiqueta <main> */
@@ -66,7 +78,10 @@ main {
 
 /* Estilos para la etiqueta <section> */
 section {
-    padding: 20px;
+    padding: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0;
 }
 
 /* Estilos para la etiqueta <article> */
@@ -74,25 +89,29 @@ article {
     border: 1px solid #333;
     padding: 10px;
 }
+
 div {
     float: left;
     width: 50%;
     padding: 0 15px
 }
-.opciones{
+
+.opciones {
 
     color: #000000;
     padding: 10px;
 
 
 }
-.pino1{
+
+.pino1 {
     width: 200px;
     height: 200px;
     margin: 15px;
     padding: 10px;
 
 }
+
 button {
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -108,9 +127,10 @@ button:hover {
     background-color: #333;
     color: #fff;
 }
-.leyenda{
+
+.leyenda {
     text-align: center;
-    font-family: "Baskerville Old Face";
+    font-family: 'Felipa', cursive;
     font-size: 30px;
     font-weight: bold;
     color: #000000;
@@ -123,20 +143,30 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
+
 .logo-btn {
     width: 100px;
     height: 100px;
-    border-radius:50%;
+    border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
-    margin: 10px;
+    margin-right: 0; /* cambia el margen derecho a 0 */
     padding: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-
+    margin-left: 20px;
 }
+
 
 .logo-btn img {
     display: block;
     width: 105px;
     height: auto;
 }
+
+.subTitulo {
+    font-family: 'Kaisei Opti', serif;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+
