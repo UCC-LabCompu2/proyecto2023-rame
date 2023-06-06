@@ -43,13 +43,13 @@
             <h1>Elige el tipo de árbol:</h1>
             <ul class="opciones">
                 <li>
-                    <button>Mistol</button>
+                    <button onclick="verifResultado(this.id)" id="btn-mistol">Mistol</button>
                 </li>
                 <li>
-                    <button>Chañar</button>
+                    <button onclick="verifResultado(this.id)" id="btn-chañar">Chañar</button>
                 </li>
                 <li>
-                    <button>Pino</button>
+                    <button onclick="verifResultado(this.id)" id="btn-Pino">Pino</button>
                 </li>
             </ul>
         </div>
@@ -67,6 +67,9 @@
             <label for="total">Arboles x hectarea </label>
             <input type="text" id="total" name="resul" placeholder="arboles x hectarea" disabled>
         </p>
+        <canvas width="800" height="600" id="myCanvas">
+
+        </canvas>
 
     </section>
 
