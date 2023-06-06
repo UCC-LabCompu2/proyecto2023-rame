@@ -32,15 +32,12 @@ function mostrarFotoAleatoria() {
 
             } else {
                 resultado.textContent = "Incorrecto. Intenta nuevamente.";
-
-
-
             }
 
             mostrarFotoAleatoria();
         });
     }
-    alert(resultado.textContent);
+
 }
 
 mostrarFotoAleatoria();
