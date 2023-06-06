@@ -38,6 +38,7 @@ function mostrarFotoAleatoria() {
 
 mostrarFotoAleatoria();
 
+
 /**
  * Funcion que permite ingresar 2 numeros y calcular la divicion entre ellos, si se ingresa mal un numero aparece una ventrna de error
  * @method calcularDivision
