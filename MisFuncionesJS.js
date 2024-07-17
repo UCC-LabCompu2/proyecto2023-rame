@@ -1,7 +1,3 @@
-
-
-
-
 var imagenes = [
     {nombre: "Mistol", ruta: "Imagenes/mistol.png"},
     {nombre: "Chañar", ruta: "Imagenes/chañar.png"},
@@ -13,17 +9,17 @@ var imagenes = [
  * @method mostrarFotoAleatoria
  */
 function mostrarFotoAleatoria() {
-    let imagenSeleccionada = document.getElementById("imagen-seleccionada");
-    let opciones = document.getElementsByClassName("opciones")[0].getElementsByTagName("button");
+    const imagenSeleccionada = document.getElementById("imagen-seleccionada");
+    const opciones = document.getElementsByClassName("opciones")[0].getElementsByTagName("button");
     let resultado = document.getElementById("resultado");
 
     let imagenAleatoria = imagenes[Math.floor(Math.random() * imagenes.length)];
     imagenSeleccionada.src = imagenAleatoria.ruta;
     imagenSeleccionada.alt = imagenAleatoria.nombre;
 
-    for (var i = 0; i < opciones.length; i++) {
+    for (let i = 0; i < opciones.length; i++) {
         opciones[i].addEventListener("click", function () {
-            var opcionSeleccionada = this.textContent;
+            const opcionSeleccionada = this.textContent;
 
             console.log("Opcion seleccionada: "+opcionSeleccionada)
             console.log("Nombre imagen: "+imagenAleatoria.nombre)
@@ -50,12 +46,29 @@ function mostrarFotoAleatoria() {
  */
 
 function calcularDivision() {
-    const num1 = parseFloat(document.getElementById("num1").value);
-    const num2 = parseFloat(document.getElementById("num2").value);
+    const num1 = document.getElementById("num1").value;
+    const num2 = document.getElementById("num2").value;
     const resultado = document.getElementById("total").value;
 
     const canvas = document.getElementById("myCanvas");
 
+    console.log(num1)
+    console.log(num2)
+    if(isNaN(num1) && num1!=""){
+        alert("Error: No se pueden ingresar letras en Superficie");
+        document.getElementById("num1").value = "";
+        document.getElementById("total").value = "";
+        canvas.width = canvas.width;
+        return;
+    }
+
+    if(isNaN(num2) && num2!=""){
+        alert("Error: No se pueden ingresar letras en Marco de Plantación");
+        document.getElementById("num2").value = "";
+        document.getElementById("total").value = "";
+        canvas.width = canvas.width;
+        return;
+    }
 
     if (num1 < 0 || num2 < 0) {
         alert("Error: No se pueden ingresar valores negativos");
@@ -70,16 +83,20 @@ function calcularDivision() {
         alert("No se puede realizar el grafico");
         document.getElementById("num1").value = "";
         canvas.width = canvas.width;
+        document.getElementById("total").value = "";
+        return;
     }
 
-    if (num2 == 0) {
+    if (num2 === "0") {
         alert("Error: No se puede dividir por cero");
+        document.getElementById("num2").value = "";
         document.getElementById("total").value = "";
         canvas.width = canvas.width;
+        return;
     }
 
     if (num1 && num2) {
-        const division = Math.floor(num1 / num2);
+        const division = Math.floor(parseFloat(num1) / parseFloat(num2));
         document.getElementById("total").value = division;
         dibujarArboles(num1, division);
 
@@ -99,12 +116,12 @@ function dibujarArboles(hect, cantArb) {
 
     canvas.width = canvas.width;
 
-    console.log("Hectareas totales: " + hect)
-    console.log("Cantidad de Arboles: " + cantArb)
+    console.log("Hectareas totales: " + hect);
+    console.log("Cantidad de Arboles: " + cantArb);
     const cantCampos = hect / 10000;
     console.log("Hectareas calculadas: " + cantCampos);
     let margen = 0;
-    let cantArbxHec = parseInt(cantArb / cantCampos);
+    const cantArbxHec = parseInt(cantArb / cantCampos);
     ctx.font = "10pt Verdana";
 
     for (let i = 0; i < cantCampos; i++) {
