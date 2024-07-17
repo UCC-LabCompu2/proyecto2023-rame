@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="mostrarFotoAleatoria();">
 <header>
     <a href="index.html" class="logo-btn">
         <img src="Imagenes/logo4_pag.png" alt="Logo de Renoval">
@@ -57,12 +57,13 @@
         <div id="resultado"></div>
 
         <h2>Cantidad de arboles por hectarea</h2>
-        <p >
-            <label for="num1">Número de hectáreas:</label>
+        <p>
+            <label for="num1">Superficie:</label>
             <input type="text" id="num1" name="div_num1" placeholder="1 hectarea = 10000" onchange="calcularDivision()">
             /
-            <label for="num2">Marco de plantación:</label>
-            <input type="text" id="num2" name="div_num2" placeholder="marco de plantacion" onchange="calcularDivision()">
+            <label for="num2">Marco de plantacion:</label>
+            <input type="text" id="num2" name="div_num2" placeholder="marco de plantacion"
+                   onchange="calcularDivision()">
             =
             <label for="total">Arboles x hectarea </label>
             <input type="text" id="total" name="resul" placeholder="arboles x hectarea" disabled>

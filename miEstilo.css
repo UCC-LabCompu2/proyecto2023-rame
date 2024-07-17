@@ -161,10 +161,10 @@ button:hover {
     margin-top: 40px;
     font-size: 16px;
 }
+
 .titulo {
     color: #000000;
 }
-
 
 
 .imagen-ajustada {
@@ -175,7 +175,7 @@ button:hover {
 
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,20 +187,26 @@ button:hover {
 
 }
 
-.text{
+.text {
     font-family: 'Kaisei Opti', serif;
 
 }
-.texto1{
+
+.texto1 {
     font-family: 'Kaisei Opti', serif;
 }
-.texto2{
+
+.texto2 {
     font-family: 'Kaisei Opti', serif;
 }
-.footer-content{
+
+.footer-content {
     margin-bottom: 250px;
+    margin-top: 200px;
+
+
 }
 
-#servicios{
+#servicios {
     color: #333333;
 }
