@@ -95,6 +95,18 @@ function calcularDivision() {
         return;
     }
 
+    if(num2===""){
+        document.getElementById("total").value = "";
+        canvas.width = canvas.width;
+        return;
+    }
+
+    if(num1===""){
+        document.getElementById("total").value = "";
+        canvas.width = canvas.width;
+        return;
+    }
+
     if (num1 && num2) {
         const division = Math.floor(parseFloat(num1) / parseFloat(num2));
         document.getElementById("total").value = division;
