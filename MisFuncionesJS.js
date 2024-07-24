@@ -86,6 +86,13 @@ function calcularDivision() {
         document.getElementById("total").value = "";
         return;
     }
+    if (num2 > 10000) {
+        alert("No se puede realizar el grafico");
+        document.getElementById("num2").value = "";
+        canvas.width = canvas.width;
+        document.getElementById("total").value = "";
+        return;
+    }
 
     if (num2 === "0") {
         alert("Error: No se puede dividir por cero");

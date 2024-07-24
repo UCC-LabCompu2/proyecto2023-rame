@@ -22,15 +22,30 @@
     <h2 class="subTitulo">Servicios forestales</h2>
     <nav>
         <ul>
-            <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+            <li><a href="QuienesSomos.html">Quiénes Somos</a></li>
             <li><a href="Servicios.html">Servicios</a></li>
             <li><a href="Proyectos.html">Proyectos</a></li>
             <li><a href="Juegos.html">Juego</a></li>
         </ul>
     </nav>
 </header>
-<section>
+<section class="container">
 
+    <h2>Cantidad de árboles por hectárea</h2>
+    <p>
+        <label for="num1">Superficie:</label>
+        <input type="text" id="num1" name="div_num1" placeholder="1 hectarea = 10000" onchange="calcularDivision()">
+        /
+        <label for="num2">Marco de plantacion:</label>
+        <input type="text" id="num2" name="div_num2" placeholder="marco de plantacion"
+               onchange="calcularDivision()">
+        =
+        <label for="total">Arboles x hectarea </label>
+        <input type="text" id="total" name="resul" placeholder="árboles x hectárea" disabled>
+    </p>
+    <canvas width="800" height="600" id="myCanvas">
+
+    </canvas>
 
 </section>
 
@@ -42,5 +57,6 @@
         <p>Teléfono: +1 555-555-5555</p>
     </div>
 </footer>
+<script type="text/javascript" src="MisFuncionesJS.js"></script>
 </body>
 </html>

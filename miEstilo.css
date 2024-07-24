@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 /* Estilos para la etiqueta <header> */
@@ -13,12 +12,9 @@ header {
     color: #000000;
     padding: 10px;
     font-family: 'Junge', serif;
-
 }
 
 /* Estilos para la etiqueta <img> */
-
-
 .bosque {
     width: 100%;
     height: 300px;
@@ -26,14 +22,12 @@ header {
     padding: 0;
     margin-right: 0;
     margin-left: 0;
-
 }
 
 /* Estilos para la etiqueta <nav> */
 nav {
     display: flex;
     margin-top: 50px;
-
 }
 
 nav ul {
@@ -43,13 +37,10 @@ nav ul {
     margin-left: 340px;
     margin-right: 0px;
     font-family: 'Kaisei Opti', serif;
-
-
 }
 
 nav li {
     display: inline-block;
-
 }
 
 nav a {
@@ -59,15 +50,11 @@ nav a {
     text-decoration: none;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     margin-left: 0px;
-
 }
-
 
 nav a:hover {
     background-color: rgba(47, 128, 64, 0.51);
     color: #333;
-
-
 }
 
 /* Estilos para la etiqueta <main> */
@@ -97,13 +84,9 @@ div {
 }
 
 .opciones {
-
     color: #000000;
     padding: 10px;
-
-
 }
-
 
 button {
     font-size: 1rem;
@@ -149,7 +132,6 @@ button:hover {
     margin-left: 20px;
 }
 
-
 .logo-btn img {
     display: block;
     width: 105px;
@@ -166,13 +148,11 @@ button:hover {
     color: #000000;
 }
 
-
 .imagen-ajustada {
-    max-width: 80%;
-    max-height: 80%;
+    width: 200px; /* Tamaño fijo para la imagen */
+    height: 300px; /* Tamaño fijo para la imagen */
     margin-top: 150%;
-
-
+    object-fit: cover; /* Mantén la proporción de la imagen */
 }
 
 .container {
@@ -184,12 +164,10 @@ button:hover {
     margin-left: 40px;
     margin-top: 20px;
     margin-right: 50px;
-
 }
 
 .text {
     font-family: 'Kaisei Opti', serif;
-
 }
 
 .texto1 {
@@ -202,9 +180,7 @@ button:hover {
 
 .footer-content {
     margin-bottom: 250px;
-    margin-top: 200px;
-
-
+    margin-top: 400px;
 }
 
 #servicios {
